@@ -1,0 +1,23 @@
+allprojects {
+    
+    apply plugin: "java"
+    apply plugin: "eclipse"
+    apply plugin: "idea"
+
+    group = 'io.github.tonodus.spooty'
+    version = '0.0.1-SNAPSHOT'
+    description = "Spooty"
+
+    sourceCompatibility = '1.8'
+    targetCompatibility = '1.8'
+
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url "http://repo.spongepowered.org/Sponge/maven/" }
+    }
+
+    dependencies {
+        compile 'org.spongepowered:spongeapi:1.0'
+    }
+}
